@@ -32,11 +32,10 @@ def search_vehicle(vehicle_name):
 
 #Defining the Add option.
 def add_vehicle(vehicle_name):
-    if vehicle_name in AllowedVehiclesList:
+     global AllowedVehiclesList
+     if vehicle_name not in AllowedVehiclesList:
         AllowedVehiclesList.append(vehicle_name)
         print(f"You have added {vehicle_name} as an authorized vehicle.")
-
-
 
 
 
