@@ -20,7 +20,7 @@ def print_all_vehicles():
     print('Authorized Vehicles:')
     for vehicle in AllowedVehiclesList:
         print(vehicle)
-        print('*******************************')
+    print('*******************************')
 
 #Defining search option.
 def search_vehicle(vehicle_name):
@@ -28,11 +28,10 @@ def search_vehicle(vehicle_name):
      print(f"{vehicle_name} is an authorized vehicle")
     else:
         print(f"{vehicle_name} is not an authorized vehicle, if you received this in error please check the spelling and try again")
-        print('********************************')
+    print('********************************')
 
 #Defining the Add option.
 def add_vehicle(vehicle_name):
-     global AllowedVehiclesList
      if vehicle_name not in AllowedVehiclesList:
         AllowedVehiclesList.append(vehicle_name)
         print(f"You have added {vehicle_name} as an authorized vehicle.")
@@ -44,18 +43,8 @@ def print_allowed_vehicles_list():
     print('\nThe AutoCountry sales manager has authorized the purchase and selling of the following vehicles:')
     for vehicles in AllowedVehiclesList:
         print(vehicles)
-    menu = f"""
-The AutoCountry sales manager has authorized the purchase and selling of the following vehicles:
-{print_allowed_vehicles_list}
-*******************************
-AutoCountry Vehicle Finder v0.3
-*******************************
-Please Enter the following number below from the following menu:
-1. PRINT all Authorized Vehicles
-2. SEARCH for Authorized Vehicle
-3. ADD Authorized Vehicle
-4. Exit
-"""
+    print('********************************')
+
 #
 def main():
     while True:
