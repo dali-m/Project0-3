@@ -30,6 +30,14 @@ def search_vehicle(vehicle_name):
         print(f"{vehicle_name} is not an authorized vehicle, if you received this in error please check the spelling and try again")
         print('********************************')
 
+#Defining the Add option.
+def add_vehicle(vehicle_name):
+    if vehicle_name in AllowedVehiclesList:
+        AllowedVehiclesList.append(vehicle_name)
+        print(f"You have added {vehicle_name} as an authorized vehicle.")
+
+
+
 
 
 #Second part of the menu 
