@@ -11,7 +11,8 @@ def print_menu():
     print('Please Enter the following number below from the following menu:')
     print('1. PRINT all Authorized Vehicles')
     print('2. SEARCH for Authorized Vehicle')
-    print('3. Exit')
+    print('3. ADD Authorized Vehicle')
+    print('4. Exit')
     print('********************************')
 
 #Adding the end part of the menu.
